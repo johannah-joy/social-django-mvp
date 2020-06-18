@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>{% block title %}Chirp{% endblock %}</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="app-name">Chirp</h1>
+    </div>
+    <ul class="nav-top">
+        <li><a href="{% url 'posts:home' %}">Home</a></li>
+        {% if user.is_authenticated %}
+        {% comment %} <li><a href="{% url 'posts:my-tweets' %}">My Tweets</a></li> {% endcomment %}
+        <li><a href="{% url 'posts:add-tweet' %}">Add Tweet</a></li>
+        <li><a href="{% url 'users:logout' %}">Logout, <em>{{ user.username }}</em></a></li>
+        {% endif %}
+    </ul>
+    
+	{% block content %}
+	{% endblock content %}
+    </div>
+
+</body>
+</html>

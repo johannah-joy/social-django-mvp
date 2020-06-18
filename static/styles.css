@@ -1,0 +1,79 @@
+.body {
+    text-align: center;
+  }
+  
+  .header {
+    padding: 20px;
+    /* background: #43a3e8; */
+    background: #64aee3;
+    text-align: center;
+  }
+  
+  .nav-top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+    /* background-color: #b29ac3; */
+  }
+  
+  .nav-top li {
+    float: left;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  li a {
+    display: block;
+    /* background-color: #b29ac3; */
+    color: #64aee3;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+  /* Add a white background color to nav links on hover */
+  li a:hover {
+    background-color: white;
+  }
+  
+  .form-border {
+    border: 3px solid black;
+    padding-bottom: 12px;
+    margin-right: 300px;
+    margin-left: 300px;
+  }
+  
+  .input-box {
+    width: 20%;
+  }
+
+
+  
+  /* Mobile Design */
+  @media (max-width: 414px) {
+    .input-box {
+      width: 80%;
+    }
+  }
+  
+  /* Tablet Design */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .input-box {
+      width: 35%;
+    }
+  }
+  
+  
+  
+  /* Desktop Design */
+  /* @media (min-width: 1025px) {
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  } */
